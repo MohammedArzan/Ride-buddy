@@ -1,0 +1,208 @@
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.logo-container {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%; 
+    background: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1b2df1; 
+    font-weight: bold;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #555;
+}
+
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; 
+}
+
+form input:focus, form select:focus {
+    border-color: #4caf50; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #220ce7;
+}
+
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9; 
+    border-left: 5px solid #f3f5f3; 
+    font-size: 1.1em;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777; 
+    font-size: 0.9em;
+}
+
+#graphContainer {
+    margin-top: 30px;
+    background: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#graphContainer h2 {
+    font-size: 1.5em;
+    color: #4caf50; 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+#emissionsChart {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; 
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    form label {
+        font-size: 0.9em; 
+    }
+
+    form input, form select {
+        font-size: 0.9em; 
+    }
+
+    form button {
+        font-size: 0.9em; 
+    }
+
+    #graphContainer h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    form label {
+        font-size: 0.8em;
+    }
+
+    form input, form select {
+        font-size: 0.8em; 
+    }
+
+    form button {
+        font-size: 0.8em; 
+    }
+
+    #graphContainer h2 {
+        font-size: 1em;
+    }
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideBuddy Carbon Tracker</title>
+    <link rel="stylesheet" href="carbontracker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="ofcRB.png.png">
+    <link rel="icon" href="images/ofcRB.png.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+</head>
+<body>
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="ofcRB.png.png" alt="RideBuddy Logo" class="logo">
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>RideBuddy Carbon Footprint Tracker</h1>
+        <form id="carbonForm">
+            <label for="rideType">Choose your Ride:</label>
+            <select id="rideType">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+            </select>
+
+            <label for="distance">Trip Distance (km):</label>
+            <input type="number" id="distance" required>
+
+            <label for="riders">Number of Riders:</label>
+            <input type="number" id="riders" required>
+
+            <label for="fuelType">Fuel Type (For Cars Only):</label>
+            <select id="fuelType">
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+            </select>
+
+            <label for="traffic">Traffic Condition:</label>
+            <select id="traffic">
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="heavy">Heavy</option>
+            </select>
+
+            <label for="idleTime">Idle Time (minutes):</label>
+            <input type="number" id="idleTime" required>
+
+            <label for="startTime">Trip Start Time (24-hour format):</label>
+            <input type="number" id="startTime" required>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div> 
+
+    <!-- Emission Graph Section -->
+    <div id="graphContainer" style="margin-top: 30px;">
+        <h2>Emission History</h2>
+        <canvas id="emissionsChart"></canvas>
+    </div>
+    <script src="carbontracker.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
